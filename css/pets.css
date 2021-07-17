@@ -1,0 +1,383 @@
+/*Retrieved from url: https://codepen.io/bronekj/pen/BixJz*/
+
+.title {
+    position: absolute; 
+    text-align: center;
+    top: 27vh;
+    font-size: 50px;
+    width: 100%;
+    color: darksalmon;
+    font-weight: bold;
+}
+
+.cats, .dogs, .rabbits, .guineaPigs {
+    position: absolute;
+    margin-left: 8vw;
+    font-size: 37px;
+    font-weight: 450;
+    text-decoration: underline;
+}
+
+.cats {
+    top: 42vh;
+    color: rosybrown;
+}
+
+.dogs {
+    top: 167vh;
+    color: antiquewhite;
+}
+
+.rabbits {
+    top: 302vh;
+    color: skyblue;
+}
+
+.guineaPigs {
+    top: 440vh;
+    color: rebeccapurple;
+}
+
+/*pet background images*/
+.catBG img, .dogBG img, .rabbitBG img, .guineaPigsBG img{
+    width: 100vw;
+    height: 137vh;
+}
+
+.dogBG img{
+    margin-top: 0vh;
+}
+
+.rabbitBG img{
+    margin-top: 0vh;
+}
+
+.guineaPigsBG{
+    width: 100vw;
+    height: 137vh;
+    background-color: aqua;
+    margin-top: 0vh;
+}
+
+/*flipping circles: 1-7 = cats, 8-14 = dogs, 15-22 = rabbits, 23-28 = guinea pigs*/ 
+.circle-container, .circle-container2, .circle-container3, .circle-container4, 
+.circle-container5, .circle-container6, .circle-container7, .circle-container8, 
+.circle-container9, .circle-container10, .circle-container11, .circle-container12, 
+.circle-container13, .circle-container14, .circle-container15, .circle-container16, 
+.circle-container17, .circle-container18, .circle-container19, .circle-container20, 
+.circle-container21, .circle-container22, .circle-container23, .circle-container24, 
+.circle-container25, .circle-container26, .circle-container27, .circle-container28{
+	position: absolute;
+	perspective: 1000;	
+}
+
+.circle-container { /*bobo*/
+    top: 60vh; 
+    left: 5vw;
+}
+	
+.circle-container2 { /*didi*/
+    top: 105vh;
+    left: 17vw; 
+}
+
+.circle-container3 { /*mushroom*/
+    top: 60vh;
+    left: 29vw;
+}
+
+.circle-container4 { /*lora*/
+    top: 105vh;
+    left: 41vw;
+}
+
+.circle-container5 { /*lucky*/
+    top: 60vh;
+    left: 53vw; 
+}
+
+.circle-container6 { /*romeo*/
+    top: 105vh;
+    left: 65.5vw;
+}
+
+.circle-container7 { /*brockley*/
+    top: 60vh;
+    left: 77vw;
+}
+
+.circle-container8 { /*hiccup*/
+    top: 175vh; 
+    left: 25vw;
+}
+	
+.circle-container9 { /*spike*/
+    top: 212vh;
+    left: 39vw; 
+}
+
+.circle-container10 { /*hero*/
+    top: 175vh;
+    left: 53vw;
+}
+
+.circle-container11 { /*scooter*/
+    top: 212vh;
+    left: 67vw;
+}
+
+.circle-container12 { /*shirley*/
+    top: 212vh;
+    left: 12vw; 
+}
+
+.circle-container13 { /*sona*/
+    top: 250vh;
+    left: 53vw;
+}
+
+.circle-container14 { /*wanda*/
+    top: 250vh;
+    left: 25vw;
+} 
+
+.circle-container15 { /*ruby*/
+    top: 312vh; 
+    left: 16vw;
+}
+	
+.circle-container16 { /*kimchi*/
+    top: 350vh;
+    left: 29.3vw; 
+}
+
+.circle-container17 { /*maple*/
+    top: 312vh;
+    left: 65.4vw;
+}
+
+.circle-container18 { /*thumper*/
+    top: 350vh;
+    left: 79vw;
+}
+
+.circle-container19 { /*bambi*/
+    top: 350vh;
+    left: 3vw; 
+}
+
+.circle-container20 { /*mimi*/
+    top: 388vh;
+    left: 16vw;
+}
+
+.circle-container21 { /*gary*/
+    top: 350vh;
+    left: 52vw;
+}
+
+.circle-container22 { /*pepper*/
+    top: 388vh; 
+    left: 65.4vw;
+}
+
+.circle-container23 { /*snuffles*/
+    top: 470vh;
+    left: 17vw;
+}
+
+.circle-container24 { /*sparky*/
+    top: 487vh;
+    left: 40vw;
+}
+
+.circle-container25 { /*tony*/
+    top: 438vh;
+    left: 40vw; 
+}
+
+.circle-container26 { /*pharsa*/
+    top: 525vh;
+    left: 58vw;
+}
+
+.circle-container27 { /*connie*/
+    top: 470vh;
+    left: 64vw;
+}
+
+.circle-container28 { /*siri*/
+    top: 525vh; 
+    left: 22vw;
+}
+
+.circle-container:hover .circle, .circle-container2:hover .circle2, 
+.circle-container3:hover .circle3, .circle-container4:hover .circle4,
+.circle-container5:hover .circle5, .circle-container6:hover .circle6,
+.circle-container7:hover .circle7, .circle-container8:hover .circle8,
+.circle-container9:hover .circle9, .circle-container10:hover .circle10,
+.circle-container11:hover .circle11, .circle-container12:hover .circle12,
+.circle-container13:hover .circle13, .circle-container14:hover .circle14,
+.circle-container15:hover .circle15, .circle-container16:hover .circle16, 
+.circle-container17:hover .circle17, .circle-container18:hover .circle18,
+.circle-container19:hover .circle19, .circle-container20:hover .circle20,
+.circle-container21:hover .circle21, .circle-container22:hover .circle22,
+.circle-container23:hover .circle23, .circle-container24:hover .circle24,
+.circle-container25:hover .circle25, .circle-container26:hover .circle26,
+.circle-container27:hover .circle27, .circle-container28:hover .circle28 {
+	transform: rotate3d(45, 45, 0, 180deg);
+}
+		
+.circle-container:hover .outer-ring, .circle-container2:hover .outer-ring2,
+.circle-container3:hover .outer-ring3, .circle-container4:hover .outer-ring4,
+.circle-container5:hover .outer-ring5, .circle-container6:hover .outer-ring6,
+.circle-container7:hover .outer-ring7, .circle-container8:hover .outer-ring8,
+.circle-container9:hover .outer-ring9, .circle-container10:hover .outer-ring10,
+.circle-container11:hover .outer-ring11, .circle-container12:hover .outer-ring12,
+.circle-container13:hover .outer-ring13, .circle-container14:hover .outer-ring14,
+.circle-container15:hover .outer-ring15, .circle-container16:hover .outer-ring16,
+.circle-container17:hover .outer-ring17, .circle-container18:hover .outer-ring18,
+.circle-container19:hover .outer-ring19, .circle-container20:hover .outer-ring20,
+.circle-container21:hover .outer-ring21, .circle-container22:hover .outer-ring22,
+.circle-container23:hover .outer-ring23, .circle-container24:hover .outer-ring24,
+.circle-container25:hover .outer-ring25, .circle-container26:hover .outer-ring26,
+.circle-container27:hover .outer-ring27, .circle-container28:hover .outer-ring28, {
+	transform: rotate3d(45, 0, 0, 180deg);
+}
+
+.circle-container:hover .outer-outer-ring, .circle-container2:hover .outer-outer-ring2,
+.circle-container3:hover .outer-outer-ring3, .circle-container4:hover .outer-outer-ring4,
+.circle-container5:hover .outer-outer-ring5, .circle-container6:hover .outer-outer-ring6,
+.circle-container7:hover .outer-outer-ring7, .circle-container8:hover .outer-outer-ring8,
+.circle-container9:hover .outer-outer-ring9, .circle-container10:hover .outer-outer-ring10,
+.circle-container11:hover .outer-outer-ring11, .circle-container12:hover .outer-outer-ring12,
+.circle-container13:hover .outer-outer-ring13, .circle-container14:hover .outer-outer-ring14, 
+.circle-container15:hover .outer-outer-ring15, .circle-container16:hover .outer-outer-ring16,
+.circle-container17:hover .outer-outer-ring17, .circle-container18:hover .outer-outer-ring18,
+.circle-container19:hover .outer-outer-ring19, .circle-container20:hover .outer-outer-ring20,
+.circle-container21:hover .outer-outer-ring21, .circle-container22:hover .outer-outer-ring22,
+.circle-container23:hover .outer-outer-ring23, .circle-container24:hover .outer-outer-ring24,
+.circle-container25:hover .outer-outer-ring25, .circle-container26:hover .outer-outer-ring26,
+.circle-container27:hover .outer-outer-ring27, .circle-container28:hover .outer-outer-ring28 {
+	transform: rotate3d(0, 45, 0, 180deg);
+}
+		
+.circle-container, .front, .back, .circle-container2, .front2, .back2,
+.circle-container3, .front3, .back3, .circle-container4, .front4, .back4,
+.circle-container5, .front5, .back5, .circle-container6, .front6, .back6,
+.circle-container7, .front7, .back7, .circle-container8, .front8, .back8,
+.circle-container9, .front9, .back9, .circle-container10, .front10, .back10,
+.circle-container11, .front11, .back11, .circle-container12, .front12, .back12,
+.circle-container13, .front13, .back13, .circle-container14, .front14, .back14,
+.circle-container15, .front15, .back15, .circle-container16, .front16, .back16,
+.circle-container17, .front17, .back17, .circle-container18, .front18, .back18,
+.circle-container19, .front19, .back19, .circle-container20, .front20, .back20,
+.circle-container21, .front21, .back21, .circle-container22, .front22, .back22,
+.circle-container23, .front23, .back23, .circle-container24, .front24, .back24,
+.circle-container25, .front25, .back25, .circle-container26, .front26, .back26,
+.circle-container27, .front27, .back27, .circle-container28, .front28, .back28 {
+	width: 210px; 
+	height: 210px; 
+	background-color: rgba(0,0,0,0);
+}
+		
+.circle, .outer-ring, .outer-outer-ring, .circle2, .outer-ring2, .outer-outer-ring2,
+.circle3, .outer-ring3, .outer-outer-ring3, .circle4, .outer-ring4, .outer-outer-ring4,
+.circle5, .outer-ring5, .outer-outer-ring5, .circle6, .outer-ring6, .outer-outer-ring6,
+.circle7, .outer-ring7, .outer-outer-ring7, .circle8, .outer-ring8, .outer-outer-ring8,
+.circle9, .outer-ring9, .outer-outer-ring9, .circle10, .outer-ring10, .outer-outer-ring10,
+.circle11, .outer-ring11, .outer-outer-ring11, .circle12, .outer-ring12, .outer-outer-ring12,
+.circle13, .outer-ring13, .outer-outer-ring13, .circle14, .outer-ring14, .outer-outer-ring14,
+.circle15, .outer-ring15, .outer-outer-ring15, .circle16, .outer-ring16, .outer-outer-ring16,
+.circle17, .outer-ring17, .outer-outer-ring17, .circle18, .outer-ring18, .outer-outer-ring18,
+.circle19, .outer-ring19, .outer-outer-ring19, .circle20, .outer-ring20, .outer-outer-ring20,
+.circle21, .outer-ring21, .outer-outer-ring20, .circle22, .outer-ring22, .outer-outer-ring22,
+.circle23, .outer-ring23, .outer-outer-ring21, .circle24, .outer-ring24, .outer-outer-ring24,
+.circle25, .outer-ring25, .outer-outer-ring23, .circle26, .outer-ring26, .outer-outer-ring26,
+.circle27, .outer-ring27, .outer-outer-ring25, .circle28, .outer-ring28, .outer-outer-ring28
+{
+	transition: 0.5s;
+	transform-style: preserve-3d;
+	transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+		
+.circle, .circle2, .circle3, .circle4, .circle5, .circle6, .circle7, 
+.circle8, .circle9, .circle10, .circle11, .circle12, .circle13, .circle14,
+.circle15, .circle16, .circle17, .circle18, .circle19, .circle20, .circle21, 
+.circle22, .circle23, .circle24, .circle25, .circle26, .circle27, .circle28 {
+	position: relative;
+	width: 175px;
+	height: 175px;
+}
+		
+.front, .back, .front2, .back2, .front3, .back3, .front4, .back4, 
+.front5, .back5, .front6, .back6, .front7, .back7, .front8, .back8, 
+.front9, .back9, .front10, .back10, .front11, .back11, .front12, .back12, 
+.front13, .back13, .front14, .back14, .front15, .back15, .front16, .back16, 
+.front17, .back17, .front18, .back18, .front19, .back19, .front20, .back20, 
+.front21, .back21, .front22, .back22, .front23, .back23, .front24, .back24, 
+.front25, .back25, .front26, .back26, .front27, .back27, .front28, .back28 {
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+		
+.front, .front2, .front3, .front4, .front5, .front6, .front7, .front8, .front9, .front10, .front11, .front12, .front13, .front14, .front15, .front16, .front17, .front18, .front19, .front20, .front21, .front22, .front23, .front24, .front25, .front26, .front27, .front28 {
+	background-color: #fff;
+	z-index: 2;
+}
+		
+.bobo, .didi, .mushroom, .lora, .lucky, .romeo, .brockley, /*cats*/
+.hiccup, .spike, .hero, .scooter, .shirley, .sona, .wanda, /*dogs*/
+.ruby, .kimchi, .maple, .thumper, .bambi, .mimi, .gary, .pepper, /*rabbits*/
+.snuffles, .sparky, .tony, .pharsa, .connie, .siri /*guinea pigs*/ {
+    top: 0vh;
+	width: 100%;
+    height: 100%;
+	display: block;
+	margin: 0em auto;
+    border-radius: 50%;
+}
+		
+.back, .back2, .back3, .back4, .back5, .back6, .back7, .back8, .back9, .back10, 
+.back11, .back12, .back13, .back14, .back15, .back16, .back17, .back18, .back19, .back20, .back21, .back22, .back23, .back24, .back25, .back26, .back27, .back28 {
+	transform: rotate3d(45,45,0,180deg);
+	background-color: #fff;
+}
+		
+.outer-ring, .outer-ring2, .outer-ring3, .outer-ring4, .outer-ring5, .outer-ring6, 
+.outer-ring7, .outer-ring8, .outer-ring9, .outer-ring10, .outer-ring11, .outer-ring12, 
+.outer-ring13, .outer-ring14, .outer-ring15, .outer-ring16, .outer-ring17, .outer-ring18, 
+.outer-ring19, .outer-ring20, .outer-ring21, .outer-ring22, .outer-ring23, .outer-ring24, 
+.outer-ring25, .outer-ring26, .outer-ring27, .outer-ring28 {
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	width: 230px;
+	height: 230px;
+	background-color: rgba(255,255,255,0);
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+}
+
+.outer-outer-ring, .outer-outer-ring2, .outer-outer-ring3, .outer-outer-ring4, 
+.outer-outer-ring5, .outer-outer-ring6, .outer-outer-ring7, .outer-outer-ring8, 
+.outer-outer-ring9, .outer-outer-ring10, .outer-outer-ring11, .outer-outer-ring12, 
+.outer-outer-ring13, .outer-outer-ring14, .outer-outer-ring15, .outer-outer-ring16, 
+.outer-outer-ring17, .outer-outer-ring18, .outer-outer-ring19, .outer-outer-ring20, 
+.outer-outer-ring21, .outer-outer-ring22, .outer-outer-ring23, .outer-outer-ring24,
+.outer-outer-ring25, .outer-outer-ring26, .outer-outer-ring27, .outer-outer-ring28 {
+	position: absolute;
+	top: -20px; 
+	left: -20px; 
+	border-radius: 50%;
+	border: 2px solid #fff;
+	width: 211px;
+	height: 211px;
+	background-color: rgba(255,255,255,0);
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+}

@@ -1,0 +1,397 @@
+<!--Retrieved from url: https://www.w3schools.com/w3css/w3css_downloads.asp--->
+<!--Retrieved from url: https://fontawesome.com/--->
+<!--Retrieved from url: https://getbootstrap.com/docs/3.4/-->
+<!--Retrieved from url: https://speckyboy.com/free-shopping-cart-css-javascript/--->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check Out</title>
+    <link rel="icon" href="../img/home/logo.png"><!--add logo img to browser tab-->
+     
+    <!--Google Font-->
+    <link href="//fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <!--linking to css files-->
+    <link rel="stylesheet" href="../css/topnav.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <!--linking to js files-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/scripts.js"></script>
+</head>
+
+<body>
+    <div class="col-12">
+        <header class="row">
+            
+            <!--Retrieved from url: https://themehunt.com/item/1524993-eshopper-best-free-ecommerce-html-template-->
+            <!-- Top Nav -->
+            <div class="col-12 bg-dark py-2 d-md-block d-none">
+                <div class="row">
+                    <div class="col-auto mr-auto">
+                        <ul class="top-nav">
+                            <li>
+                                <a href="tel:+123-456-7890"><i class="fa fa-phone mr-2"></i>(000)-000-0000</a>
+                            </li>
+                            <li>
+                                <a href="mailto:mail@ecom.com"><i class="fa fa-envelope mr-2"></i>LittlestPetShop@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <ul class="top-nav">
+                            <li>
+                                <a href="account.html"><i class="fas fa-user mr-2"></i>Account</a>
+                            </li>
+                            <li>
+                                <a href="login.html"><i class="fas fa-sign-in-alt mr-2"></i>Login/Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Nav -->
+
+            <!-- Navbar -->
+            <body>
+                <nav class="navbar">
+                    <div class="inner-width">
+                        <a href="index.html" class="logo"></a>
+                        <div class="navbar-menu">
+                            <a href="pets.html">Available Pets</a>
+                            <a href="shop.html">Shop</a>
+                        </div>
+                    </div>
+                    <a href="checkout.html" class="header-item">
+                        <i class="fa fa-shopping-cart"></i><span id="header-qty" class="m-2"> 0</span>
+                    </a>
+                </nav>
+            </body>
+            <!-- Navbar -->
+        </header>
+    </div>
+</body>
+
+<div class="header">
+    <h1>Shopping Cart</h1>
+    <p>"Get me some stuff, hooman (human)."</p>
+    <p>― Your Pet</p>
+</div>
+
+<!--Products in the Cart-->
+<div class="cart-container">
+    <div class="empty" style="display:none">No more twinkies !</div>
+    <ul class="cart">
+        <li class="product" data-price="19.35" data-quantity="1">
+            <div class="product-preview">
+                <div class="thumbnail">
+                    <img class="image" src="../img/products/cat/bed.jpg" />
+                </div>
+                <div class="product-paper">
+                    <div class="product-name">Cozy Cat Bed</div>
+                    <div class="product-price">$ 19.35</div>
+                </div>
+            </div>
+            <div class="product-quantity">x1</div>
+            <div class="product-interactions">
+                <div class="button plus">+</div>
+                <div class="button minus">-</div>
+                <div class="button del"></div>
+            </div>
+        </li>
+        <li class="product" data-price="3" data-quantity="1">
+            <div class="product-preview">
+                <div class="thumbnail">
+                    <img class="image" src="../img/products/cat/teaserCatToy.jpg" />
+                </div>
+                <div class="product-paper">
+                    <div class="product-name">Teaser Cat Toy</div>
+                    <div class="product-price">$ 3</div>
+                </div>
+            </div>
+            <div class="product-quantity">x1</div>
+            <div class="product-interactions">
+                <div class="button plus">+</div>
+                <div class="button minus">-</div>
+                <div class="button del"></div>
+            </div>
+        </li>
+        <li class="product" data-price="4.65" data-quantity="2">
+            <div class="product-preview">
+                <div class="thumbnail">
+                    <img class="image" src="../img/products/rabbit/bowl.jpg" />
+                </div>
+                <div class="product-paper">
+                    <div class="product-name">Rabbit Bowl</div>
+                    <div class="product-price">$ 9.30</div>
+                </div>
+            </div>
+            <div class="product-quantity">x2</div>
+            <div class="product-interactions">
+                <div class="button plus">+</div>
+                <div class="button minus">-</div>
+                <div class="button del"></div>
+            </div>
+        </li>
+        <li class="product" data-price="65" data-quantity="1">
+            <div class="product-preview">
+                <div class="thumbnail">
+                    <img class="image" src="../img/products/rabbit/cage.jpg">
+                </div>
+                <div class="product-paper">
+                    <div class="product-name">Rabbit Cage</div>
+                    <div class="product-price">$ 65</div>
+                </div>
+            </div>
+            <div class="product-quantity">x1</div>
+            <div class="product-interactions">
+                <div class="button plus">+</div>
+                <div class="button minus">-</div>
+                <div class="button del"></div>
+            </div>
+        </li>
+        <li class="product" data-price="20" data-quantity="2">
+            <div class="product-preview">
+                <div class="thumbnail">
+                    <img class="image" src="../img/products/dog/adultDogFood.jpg" />
+                </div>
+                <div class="product-paper">
+                    <div class="product-name">Dog Food</div>
+                    <div class="product-price">$ 40</div>
+                </div>
+            </div>
+            <div class="product-quantity">x2</div>
+            <div class="product-interactions">
+                <div class="button plus">+</div>
+                <div class="button minus">-</div>
+                <div class="button del"></div>
+            </div>
+        </li>
+        <li class="product" data-price="13" data-quantity="1">
+            <div class="product-preview">
+                <div class="thumbnail">
+                    <img class="image" src="../img/products/dog/hotDogCloth.jpg" />
+                </div>
+                <div class="product-paper">
+                    <div class="product-name">Hot Dog Clothe</div>
+                    <div class="product-price">$ 13</div>
+                </div>
+            </div>
+            <div class="product-quantity">x1</div>
+            <div class="product-interactions">
+                <div class="button plus">+</div>
+                <div class="button minus">-</div>
+                <div class="button del"></div>
+            </div>
+        </li>
+        <li class="product" data-price="7.5" data-quantity="3">
+            <div class="product-preview">
+                <div class="thumbnail">
+                    <img class="image" src="../img/products/dog/kong.jpg" />
+                </div>
+                <div class="product-paper">
+                    <div class="product-name">Kong Dog Toy</div>
+                    <div class="product-price">$ 22.50</div>
+                </div>
+            </div>
+            <div class="product-quantity">x3</div>
+            <div class="product-interactions">
+                <div class="button plus">+</div>
+                <div class="button minus">-</div>
+                <div class="button del"></div>
+            </div>
+        </li>
+        <li class="product" data-price="9" data-quantity="2">
+            <div class="product-preview">
+                <div class="thumbnail">
+                    <img class="image" src="../img/products/rabbit/food.jpg" />
+                </div>
+                <div class="product-paper">
+                    <div class="product-name">Rabbit Food</div>
+                    <div class="product-price">$ 18</div>
+                </div>
+            </div>
+            <div class="product-quantity">x2</div>
+            <div class="product-interactions">
+                <div class="button plus">+</div>
+                <div class="button minus">-</div>
+                <div class="button del"></div>
+            </div>
+        </li>
+        <li class="product" data-price="8.99" data-quantity="1">
+            <div class="product-preview">
+                <div class="thumbnail">
+                    <img class="image" src="../img/products/guineaPig/exerciseWheel.jpg" />
+                </div>
+                <div class="product-paper">
+                    <div class="product-name">Exercise Wheel</div>
+                    <div class="product-price">$ 8.99</div>
+                </div>
+            </div>
+            <div class="product-quantity">x1</div>
+            <div class="product-interactions">
+                <div class="button plus">+</div>
+                <div class="button minus">-</div>
+                <div class="button del"></div>
+            </div>
+        </li>
+        <li class="product" data-price="5.25" data-quantity="2">
+            <div class="product-preview">
+                <div class="thumbnail">
+                    <img class="image" src="../img/products/guineaPig/exerciseBall.jpg" />
+                </div>
+                <div class="product-paper">
+                    <div class="product-name">Exercise Ball</div>
+                    <div class="product-price">$ 10.50</div>
+                </div>
+            </div>
+            <div class="product-quantity">x2</div>
+            <div class="product-interactions">
+                <div class="button plus">+</div>
+                <div class="button minus">-</div>
+                <div class="button del"></div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--Cost-->
+<table class="bill">
+    <tr class="subtotal">
+        <td class="label">Subtotal :</td>
+        <td class="value">$ 209.64</td>
+    </tr>
+    <tr class="salestax">
+        <td class="label">Sales tax :</td>
+        <td class="value">$ 3.60</td>
+    </tr>
+    <tr>
+        <td class="label">Shipping :</td>
+        <td class="value">$ 5.00</td>
+    </tr>
+    <tr class="total">
+        <td class="label">Total :</td>
+        <td class="value">$ 218.24</td>
+    </tr>
+</table>
+
+<!--Purchase Button-->
+<div class="actions">
+    <div class="big-button go">Get them !</div>
+</div>
+</html>
+    
+<!-- Footer -->
+<!-- Footer -->
+<footer class="w3-center w3-pale-red w3-padding-48 w3-large" style="margin-top: 1vh;">
+    <p style="margin-top: -2vh; height: 1vh;"><a target="_blank" class="w3-hover-text-pink">Littlest Pet Shop 2020 ©</a></p>
+</footer>
+
+<!--Products Sliding By Mouse Move and Updating Cost-->
+<script>
+    $('.cart-container').on('mousemove', function(evt) {
+        var windowWidth = $(window).width();
+        var cartWidth = $('.product').length * 200;
+        if (windowWidth < cartWidth)
+            $('.cart').stop(false, true).animate({
+                left: -(evt.clientX / windowWidth) * (cartWidth - windowWidth)
+            });
+        else
+            $('.cart').stop(false, true).css({
+                left: 0
+            });
+    });
+
+    $('.plus').click(function() {
+        var product = $(this).closest('.product')
+        var q = product.data('quantity') + 1;
+        product.data('quantity', q);
+        updateProduct(product);
+    });
+
+    $('.minus').click(function() {
+        var product = $(this).closest('.product')
+        var q = Math.max(1, product.data('quantity') - 1);
+        product.data('quantity', q);
+        updateProduct(product);
+    });
+
+    $('.del').click(function() {
+        var product = $(this).closest('.product')
+        product.hide('blind', {
+            direction: 'left'
+        }, 500, function() {
+            product.remove();
+            updateProduct(product);
+            if ($('.product').length == 0) {
+                $('.cart-container .cart').hide();
+                $('.cart-container .empty').show();
+            }
+        });
+    });
+
+    function updateProduct(product) {
+        var quantity = product.data('quantity');
+        var price = product.data('price');
+        $('.product-quantity', product).text('x' + quantity);
+        $('.product-price', product).text('$ ' + (price * quantity).toFixed(2));
+        updateBill();
+    }
+
+    function updateBill() {
+        var subtotal = 0;
+        var salestax = 0;
+        var shipping = 5;
+        var total = 0;
+        $('.product').each(function() {
+            subtotal += $(this).data('quantity') * $(this).data('price');
+        });
+        salestax = subtotal * 0.05;
+        total = subtotal + salestax + shipping;
+        $('.subtotal .value').text('$ ' + subtotal.toFixed(2));
+        $('.salestax .value').text('$ ' + salestax.toFixed(2));
+        $('.total .value').text('$ ' + total.toFixed(2));
+    }
+</script>
+
+<script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+</script>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>

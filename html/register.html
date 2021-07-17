@@ -1,0 +1,193 @@
+<!--Retrieved from url: https://www.w3schools.com/w3css/w3css_downloads.asp--->
+<!--Retrieved from url: https://fontawesome.com/--->
+<!--Retrieved from url: https://getbootstrap.com/docs/3.4/-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="icon" href="../img/home/logo.png"><!--add logo img to browser tab-->
+
+    <!--Google Font-->
+    <link href="//fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!--linking to css files-->
+    <link rel="stylesheet" href="/css/topnav.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!--linking to js files-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/scripts.js"></script>
+</head>
+
+<body style="background-color: cornsilk;">
+    <div class="col-12">
+        <header class="row">
+            
+            <!--Retrieved from url: https://themehunt.com/item/1524993-eshopper-best-free-ecommerce-html-template-->
+            <!-- Top Nav -->
+            <div class="col-12 bg-dark py-2 d-md-block d-none">
+                <div class="row">
+                    <div class="col-auto mr-auto">
+                        <ul class="top-nav">
+                            <li>
+                                <a href="tel:+123-456-7890"><i class="fa fa-phone mr-2"></i>(000)-000-0000</a>
+                            </li>
+                            <li>
+                                <a href="mailto:mail@ecom.com"><i class="fa fa-envelope mr-2"></i>LittlestPetShop@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <ul class="top-nav">
+                            <li>
+                                <a href="account.html"><i class="fas fa-user mr-2"></i>Account</a>
+                            </li>
+                            <li>
+                                <a href="login.html"><i class="fas fa-sign-in-alt mr-2"></i>Login/Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Nav -->
+
+            <!-- Navbar -->
+            <body>
+                <nav class="navbar">
+                    <div class="inner-width">
+                        <a href="index.html" class="logo"></a>
+                        <div class="navbar-menu">
+                            <a href="pets.html">Available Pets</a>
+                            <a href="shop.html">Shop</a>
+                        </div>
+                    </div>
+                    <a href="checkout.html" class="header-item">
+                        <i class="fa fa-shopping-cart"></i><span id="header-qty" class="m-2"> 0</span>
+                    </a>
+                </nav>
+            </body>
+            <!-- Navbar -->
+        </header>
+    </div>
+
+    <div id="content">
+        <section class="guest-checkout-wrap">
+            <div class="container">
+                <div tabindex="0" class="guestcheck-info text-center"></div>
+                <div class="row">
+                    <div class="col-sm-12 equi-height">
+                        <div class="form-inner-box" style="background-color: snow;">
+                            <h1 tabindex="0" class="sign-up-hdr text-center"><span></span>REGISTER</h1>
+                            <form method="POST" action="." novalidate>
+                                <input type='hidden' name='csrfmiddlewaretoken' value='cmuGMbEy2XaMlTpyZ93bU7aBTn4mAGcqtPEbqjXOsAN8bl6PSRePXm7iNOXWsheB' />
+                                <div class="form-group">
+                                    <div class="input-group iconbox required">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <input type="text" name="first_name" placeholder="FIRST NAME" class="form-control" required id="id_first_name" />
+                                    </div>
+                                    <span tabindex="0" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group iconbox required">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <input type="text" name="last_name" placeholder="LAST NAME" class="form-control" required id="id_last_name" />
+                                    </div>
+                                    <span tabindex="0" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group iconbox required">
+                                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                        <input type="email" name="email" placeholder="EMAIL" class="form-control" required id="id_email" />
+                                    </div>
+                                    <span tabindex="0" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group iconbox required">
+                                        <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                        <input type="text" name="phone" placeholder="PHONE NUMBER" class="form-control" maxlength="10" id="id_phone" required autocomplete="off" oninput="process_integer_input(this)" />
+                                    </div>
+                                    <span class="small text-muted"></span>
+                                    <span tabindex="0" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group iconbox required">
+                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                        <input type="password" name="password1" placeholder="PASSWORD" class="form-control" required id="id_password1" />
+                                    </div>
+                                    <span tabindex="0" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group iconbox required">
+                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                        <input type="password" name="password2" placeholder="CONFIRM PASSWORD" class="form-control" required id="id_password2" />
+                                    </div>
+                                    <span tabindex="0" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-outline-dark">Sign Up</button>
+                                </div>
+                            </form>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ===  MAIN CONTENT ENDS === -->
+</body>
+
+</html>
+
+<div class="col-12 align-self-end"></div>
+
+<!-- Footer -->
+<footer class="w3-center w3-pale-red w3-padding-48 w3-large" style="margin-top: -5vh;">
+    <p style="margin-top: -2vh;"><a target="_blank" class="w3-hover-text-pink">Littlest Pet Shop 2020 ©</a></p>
+</footer>
+
+<script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+</script>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>

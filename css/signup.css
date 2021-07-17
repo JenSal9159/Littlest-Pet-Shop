@@ -1,0 +1,260 @@
+/*Retrieved from url: https://cdn.etailpet.com/static/themes/retailer/petsplusnatural/css/main.202011171202.css*/
+/*Retrieved from url: https://w3layouts.com/credit-login-and-register-form-a-responsive-widget-template*/
+
+body,
+html {
+    height: 100%
+}
+
+.checkbox {
+    padding-left: 20px
+}
+
+.checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px
+}
+
+.checkbox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 1px;
+    margin-left: -20px;
+    border: 1px solid #888888;
+    border-radius: 0px;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out
+}
+
+.checkbox label::after {
+    display: inline-block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0px;
+    top: 0px;
+    margin-left: -20px;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-size: 11px;
+    color: #c33
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0
+}
+
+.checkbox input[type="checkbox"]:checked + label::before {
+    border-color: #9C1E21;
+    background: #9C1E21
+}
+
+.checkbox input[type="checkbox"]:checked + label::after {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    color: #fff
+}
+
+.checkbox input[type="checkbox"]:disabled + label {
+    opacity: 0.65
+}
+
+.checkbox input[type="checkbox"]:disabled + label::before {
+    background-color: #eeeeee;
+    cursor: not-allowed
+}
+
+.iconbox {
+    width: 100%
+}
+
+.iconbox .input-group-addon {
+    position: absolute;
+    z-index: 200;
+    background: transparent;
+    border: 0;
+    font-size: 22px;
+    height: 52px;
+    line-height: 38px;
+    left: 15px;
+    width: 44px
+}
+
+.iconbox .input-group-addon .fa {
+    color: #87314b
+}
+
+.iconbox .input-group-addon .fa.fa-envelope {
+    font-size: 20px
+}
+
+@media screen and (max-width: 767px) {
+    .iconbox .input-group-addon .fa.fa-envelope {
+        font-size: 14px
+    }
+}
+
+.list-bgico {
+    position: relative
+}
+
+.list-icon {
+    position: absolute;
+    left: 0;
+    font-size: 22px;
+    top: -3px
+}
+
+@media screen and (max-width: 767px) {
+    .list-icon {
+        top: -5px
+    }
+}
+
+.list-icon .fa {
+    color: #87314b
+}
+
+.list-icon .fa.fa-envelope {
+    font-size: 20px
+}
+
+@media screen and (max-width: 767px) {
+    .list-icon .fa.fa-envelope {
+        position: relative;
+        top: -2px
+    }
+}
+
+.form-inner-box {
+    max-width: 570px;
+    margin: auto;
+    padding: 60px 50px;
+    -webkit-box-shadow: 0 0 80px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 80px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0 0 80px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.15)
+}
+
+.form-inner-box .form-group {
+    margin-bottom: 20px
+}
+
+.form-inner-box .form-control {
+    padding: 5px 20px 5px 66px;
+    border: 1px solid #b2b2b2;
+    border-radius: 0;
+    height: 50px
+}
+
+
+@media screen and (max-width: 767px) {
+    .form-inner-box .form-control {
+        padding: 5px 10px 5px 40px;
+        height: 42px
+    }
+}
+
+.form-inner-box .required {
+    position: relative
+}
+
+.form-inner-box .required:after {
+    content: '*';
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    color: #a00;
+    font-size: 38px;
+    z-index: 10;
+    line-height: 30px
+}
+
+@media screen and (max-width: 767px) {
+    .form-inner-box .required:after {
+        top: 15px
+    }
+}
+
+.form-inner-box hr {
+    border-top: 1px solid #bbbbbb
+}
+
+.frgt-pswd a {
+    color: #87314b;
+    font-weight: 600
+}
+
+.guest-checkout-wrap {
+    padding: 10px 0 50px
+}
+
+.guest-checkout-wrap .form-inner-box {
+    padding: 30px 30px
+}
+
+
+.guest-checkout-wrap .sign-up-hdr {
+    font-size: 28px;
+    padding-bottom: 15px
+}
+
+.guest-checkout-wrap .guest-signin {
+    height: 100%
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .guest-checkout-wrap .logn h4 {
+        font-size: 13px
+    }
+}
+
+.guest-login {
+    background-color: #87314b;
+    padding: 30px;
+    margin-top: 30px
+}
+
+.guest-login .btn {
+    border-radius: 0;
+    width: 100%;
+    border: 0;
+    text-transform: uppercase;
+    color: #fcc;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    height: 50px
+}
+
+.guest-login .btn:focus,
+.guest-login .btn:hover {
+    opacity: 1;
+    background-color: #87314b;
+    color: #fff
+}
+
+@media only screen and (min-device-width: 992px) {
+    .container {
+        max-width: 600px
+    }
+}
+
+footer,
+.page-wrapper:after {
+    height: 100px
+}
+
+label.checkbox {
+    display: block;
+    margin: 15px 0px 0px 6px;
+    text-align: left;
+    border-color: aqua
+}

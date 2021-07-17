@@ -1,3 +1,5 @@
+Video Link for the Website: https://www.youtube.com/watch?v=vfuQiFYDzVs
+
 Reflection: 
 - What we learned: 
     - If something doesn't work, start researching and testing things to find solutions.
@@ -31,4 +33,3 @@ Difficulties That We Overcame:
 
 - Footer
     - In some webpages, the footer size and the text position looked the same, but they also looked slightly different in other webpages. We knew this was caused by the signup.css file, so we edited the code in the css file and changed the margins in the HTML file to fix this.
-
